@@ -1,0 +1,1 @@
+nutrition table with people data (name, height, weight, age, body fat, imc)
