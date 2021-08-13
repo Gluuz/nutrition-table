@@ -10,6 +10,11 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
        
         var tabela = document.querySelector("#tabela-pacientes");
     
+        if(!validaPaciente(paciente)){
+            console.log("rola");
+            return;
+        }
+
         tabela.appendChild(pacienteTr);
         
 
@@ -48,4 +53,13 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
         
             return td;
         }
+
+        function validaPaciente(paciente){
+            if(validaPeso(paciente.peso)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
 })
